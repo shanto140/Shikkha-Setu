@@ -1,0 +1,45 @@
+const organizerService = require("../services/organizer.service");
+const { successResponse, errorResponse } = require("../utils/response");
+
+
+const getOrganizerRequests = async (req, res) => {
+  try {
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const result = await organizerService.getOrganizerRequests(req.user.id, page, limit);
+    return successResponse(res, result);
+  } catch (error) {
+    return errorResponse(res, error.message);
+  }
+};
+
+const getMyProfile = async (req, res) => {
+  try {
+    const profile = await organizerService.getProfile(req.user.id);
+    return successResponse(res, profile);
+  } catch (error) {
+    return errorResponse(res, error.message, 404);
+  }
+};
+
+const getSentRequests = async (req, res) => {
+  try {
+    const requests = await organizerService.getSentRequests(req.user.id);
+    return successResponse(res, requests);
+  } catch (error) {
+    return errorResponse(res, error.message);
+  }
+};
+
+const updateProfile = async (req, res) => {
+  try {
+    const data = await organizerService.updateProfile(req.user.id, req.body);
+    return successResponse(res, null, "profile updated");
+  } catch (error) {
+    return errorResponse(res, error.message, 400);
+  }
+};
+
+
+module.exports = { getOrganizerRequests, getMyProfile, getSentRequests, updateProfile };
+
