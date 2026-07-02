@@ -96,46 +96,45 @@ export default function ProfileSidebar({ open, onClose }) {
   return (
     <>
       {open && (
-        <div className="fixed inset-0 bg-black/40 z-40" onClick={onClose} />
+        <div className="fixed inset-0 bg-black/60 z-40" onClick={onClose} />
       )}
 
       <div
-        className={`fixed top-0 right-0 w-72 h-full bg-white/95 backdrop-blurshadow-xl rounded-l-2xl border-l
-         border-gray-100 flex flex-col overflow-hidden
+        className={`fixed top-0 right-0 w-72 h-full  bg-[#252937] backdrop-blurshadow-xl rounded-l-2xl border-l
+         border-[#46584f] flex flex-col overflow-hidden
           transform transition-transform duration-300 ease-in-out z-50
           ${open ? "translate-x-0" : "translate-x-full -translate-y-full"}`}
       >
 
 
-        <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
-          <h2 className="font-semibold text-gray-800">My Profile</h2>
+        <div className="flex items-center justify-between px-5 py-4 border-b border-[#254652] flex-shrink-0">
+          <h2 className="font-semibold text-[#1e0ca9] text-sm">My Profile</h2>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 transition"
+            className="text-[#d1d5d6] hover:text-[#5e6c83] transition"
           >
             <X size={18} />
           </button>
         </div>
 
         {profile && (
-          <div className="flex items-center gap-3 px-5 py-4 border-b border-gray-100">
+          <div className="flex items-center gap-3 px-5 py-4 border-b border-[#254652]">
             <div className="w-12 h-12 rounded-full bg-blue-100 text-blue-600 font-bold flex items-center justify-center text-sm flex-shrink-0">
               {getInitials(profile.full_name)}
             </div>
             <div>
-              <p className="font-semibold text-gray-800 text-sm">
+              <p className="font-semibold text-[#f1f5ef] text-sm">
                 {profile.full_name}
               </p>
-              <p className="text-xs text-gray-500">{profile.email}</p>
+              <p className="text-xs text-[#f1f5ef]">{profile.email}</p>
             </div>
           </div>
         )}
 
-        {/* AVAILABILITY TOGGLE */}
         {profile && (
-          <div className="flex items-center justify-between px-5 py-3 border-b border-gray-100">
+          <div className="flex items-center justify-between px-5 py-3 border-b border-[#254652]">
 
-            <div className="flex items-center gap-2 text-sm text-gray-600">
+            <div className="flex items-center gap-2 text-sm text-[#f1f5ef]">
               {isAvailable ? (
                 <Wifi size={15} className="text-green-500" />
               ) : (
@@ -166,13 +165,13 @@ export default function ProfileSidebar({ open, onClose }) {
             <button
               key={item.key}
               onClick={() => setActiveModal(item.key)}
-              className="w-full flex items-center justify-between px-5 py-3 hover:bg-gray-50 transition text-left"
+              className="w-full flex items-center justify-between px-5 py-3 hover:bg-gray-50 transition text-left group"
             >
-              <div className="flex items-center gap-3 text-sm text-gray-700">
-                <span className="text-gray-400">{item.icon}</span>
+              <div className="flex items-center gap-3 text-sm text-[#f1f5ef] group-hover:text-[#333131]">
+                <span className="text-[#f1f5ef] group-hover:text-blue-500 transition">{item.icon}</span>
                 {item.label}
               </div>
-              <ChevronRight size={15} className="text-gray-300" />
+              <ChevronRight size={15} className="text-gray-300 group-hover:text-gray-400" />
             </button>
           ))}
         </div>

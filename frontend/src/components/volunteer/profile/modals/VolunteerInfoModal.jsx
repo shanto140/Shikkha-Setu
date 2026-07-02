@@ -61,7 +61,7 @@ export default function VolunteerInfoModal({ profile, onClose, onSuccess }) {
         </div>
 
         <div className="p-6 space-y-4">
-          {/* ACADEMIC */}
+          
           <p className="text-xs font-semibold text-gray-400 uppercase">Academic</p>
           <div>
             <label className="text-xs font-medium text-gray-600 mb-1 block">University Name</label>
@@ -69,7 +69,7 @@ export default function VolunteerInfoModal({ profile, onClose, onSuccess }) {
               name="university_name"
               value={form.university_name}
               onChange={handleChange}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div>
@@ -78,7 +78,7 @@ export default function VolunteerInfoModal({ profile, onClose, onSuccess }) {
               name="department"
               value={form.department}
               onChange={handleChange}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div>
@@ -88,7 +88,7 @@ export default function VolunteerInfoModal({ profile, onClose, onSuccess }) {
               value={form.academic_year}
               onChange={handleChange}
               placeholder="e.g. 2nd Year"
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
@@ -102,7 +102,7 @@ export default function VolunteerInfoModal({ profile, onClose, onSuccess }) {
               name="district"
               value={form.district}
               onChange={handleChange}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div>
@@ -111,7 +111,7 @@ export default function VolunteerInfoModal({ profile, onClose, onSuccess }) {
               name="upazila"
               value={form.upazila}
               onChange={handleChange}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div>
@@ -121,7 +121,7 @@ export default function VolunteerInfoModal({ profile, onClose, onSuccess }) {
               value={form.address}
               onChange={handleChange}
               rows={2}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
             />
           </div>
 
@@ -135,7 +135,7 @@ export default function VolunteerInfoModal({ profile, onClose, onSuccess }) {
               name="teaching_mode"
               value={form.teaching_mode}
               onChange={handleChange}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="online">Online</option>
               <option value="offline">Offline</option>
@@ -149,7 +149,7 @@ export default function VolunteerInfoModal({ profile, onClose, onSuccess }) {
               value={form.bio}
               onChange={handleChange}
               rows={3}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
             />
           </div>
           <div>
@@ -159,7 +159,7 @@ export default function VolunteerInfoModal({ profile, onClose, onSuccess }) {
               value={form.experience_text}
               onChange={handleChange}
               rows={3}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
             />
           </div>
 

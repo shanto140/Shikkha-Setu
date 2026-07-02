@@ -155,7 +155,7 @@ export default function AvailabilityModal({ profile, onClose, onSuccess }) {
                           day_of_week: e.target.value,
                         })
                       }
-                      className="w-full border border-gray-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full border border-gray-200 rounded-lg px-3 py-1.5 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                     >
                       {DAYS.map((d) => (
                         <option key={d} value={d}>
@@ -173,7 +173,7 @@ export default function AvailabilityModal({ profile, onClose, onSuccess }) {
                             start_time: e.target.value,
                           })
                         }
-                        className="flex-1 border border-gray-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="flex-1 border border-gray-200 rounded-lg px-3 py-1.5 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                       <input
                         type="time"
@@ -181,7 +181,7 @@ export default function AvailabilityModal({ profile, onClose, onSuccess }) {
                         onChange={(e) =>
                           setEditForm({ ...editForm, end_time: e.target.value })
                         }
-                        className="flex-1 border border-gray-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="flex-1 border border-gray-200 rounded-lg px-3 py-1.5 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                     </div>
                     <div className="flex gap-2">
@@ -246,7 +246,7 @@ export default function AvailabilityModal({ profile, onClose, onSuccess }) {
               setNewSlot({ ...newSlot, day_of_week: e.target.value });
               setError("");
             }}
-            className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <option value="">Select day</option>
             {DAYS.map((d) => (
@@ -266,7 +266,7 @@ export default function AvailabilityModal({ profile, onClose, onSuccess }) {
                 onChange={(e) =>
                   setNewSlot({ ...newSlot, start_time: e.target.value })
                 }
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
             <div className="flex-1">
@@ -279,7 +279,7 @@ export default function AvailabilityModal({ profile, onClose, onSuccess }) {
                 onChange={(e) =>
                   setNewSlot({ ...newSlot, end_time: e.target.value })
                 }
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
           </div>

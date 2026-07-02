@@ -77,7 +77,7 @@ export default function PasswordModal({ onClose }) {
                 type={show.current ? "text" : "password"}
                 value={form.current_password}
                 onChange={handleChange}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <button
                 onClick={() => setShow({ ...show, current: !show.current })}
@@ -98,7 +98,7 @@ export default function PasswordModal({ onClose }) {
                 type={show.new ? "text" : "password"}
                 value={form.new_password}
                 onChange={handleChange}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <button
                 onClick={() => setShow({ ...show, new: !show.new })}
@@ -120,7 +120,7 @@ export default function PasswordModal({ onClose }) {
                 type={show.confirm ? "text" : "password"}
                 value={form.confirm_password}
                 onChange={handleChange}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <button
                 onClick={() => setShow({ ...show, confirm: !show.confirm })}

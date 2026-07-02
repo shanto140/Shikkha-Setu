@@ -109,7 +109,7 @@ export default function ClassesModal({ profile, onClose, onSuccess }) {
               setSelected(e.target.value);
               setError("");
             }}
-            className="flex-1 border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="flex-1 border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <option value="">Select class</option>
             {allClasses

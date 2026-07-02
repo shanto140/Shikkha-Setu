@@ -44,7 +44,7 @@ export default function GeneralInfoModal({ profile, onClose, onSuccess }) {
   return (
     <div className="fixed inset-0 bg-black/40 z-50 flex items-center justify-center px-4">
       <div className="bg-white rounded-xl shadow-lg w-full max-w-md p-6">
-        {/* HEADER */}
+        
         <div className="flex items-center justify-between mb-5">
           <h2 className="text-lg font-bold text-gray-800">Edit General Info</h2>
           <button onClick={onClose} className="text-gray-400 hover:text-gray-600 transition">
@@ -52,7 +52,7 @@ export default function GeneralInfoModal({ profile, onClose, onSuccess }) {
           </button>
         </div>
 
-        {/* FORM */}
+      
         <div className="space-y-4">
           <div>
             <label className="text-xs font-medium text-gray-600 mb-1 block">Full Name</label>
@@ -60,7 +60,7 @@ export default function GeneralInfoModal({ profile, onClose, onSuccess }) {
               name="full_name"
               value={form.full_name}
               onChange={handleChange}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#2d2c2c] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div>
@@ -70,7 +70,7 @@ export default function GeneralInfoModal({ profile, onClose, onSuccess }) {
               value={form.phone}
               onChange={handleChange}
               placeholder="01XXXXXXXXX"
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 

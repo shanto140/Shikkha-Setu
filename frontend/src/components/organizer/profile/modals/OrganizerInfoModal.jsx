@@ -48,7 +48,7 @@ export default function OrganizerInfoModal({ profile, onClose, onSuccess }) {
     <div className="fixed inset-0 bg-black/40 z-50 flex items-center justify-center px-4">
 
       <div className="bg-white rounded-xl shadow-lg w-full max-w-md max-h-[85vh] overflow-y-auto">
-        {/* HEADER */}
+        
         <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100 sticky top-0 bg-white">
           <h2 className="text-lg font-bold text-gray-800">Edit Organizer Info</h2>
           <button onClick={onClose} className="text-gray-400 hover:text-gray-600 transition">
@@ -63,7 +63,7 @@ export default function OrganizerInfoModal({ profile, onClose, onSuccess }) {
               name="institution_name"
               value={form.institution_name}
               onChange={handleChange}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div>
@@ -73,7 +73,7 @@ export default function OrganizerInfoModal({ profile, onClose, onSuccess }) {
               value={form.institution_type}
               onChange={handleChange}
               placeholder="e.g. School, NGO, College"
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div>
@@ -83,7 +83,7 @@ export default function OrganizerInfoModal({ profile, onClose, onSuccess }) {
               value={form.description}
               onChange={handleChange}
               rows={3}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
             />
           </div>
 
@@ -95,7 +95,7 @@ export default function OrganizerInfoModal({ profile, onClose, onSuccess }) {
               name="district"
               value={form.district}
               onChange={handleChange}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div>
@@ -104,7 +104,7 @@ export default function OrganizerInfoModal({ profile, onClose, onSuccess }) {
               name="upazila"
               value={form.upazila}
               onChange={handleChange}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
@@ -117,7 +117,7 @@ export default function OrganizerInfoModal({ profile, onClose, onSuccess }) {
               value={form.website_url}
               onChange={handleChange}
               placeholder="https://..."
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#4b4949] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 

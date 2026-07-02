@@ -3,9 +3,11 @@ import { Outlet } from "react-router-dom";
 
 export default function Layout() {
   return (
-    <>
+    <div className="min-h-screen bg-[#0a0f1e] text-[#eeeff5]">
       <Navbar />
-      <Outlet />
-    </>
+      <main className="p-4 md:p-6">
+        <Outlet />
+      </main>
+    </div>
   );
 }

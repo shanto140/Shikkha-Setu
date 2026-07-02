@@ -104,9 +104,9 @@ export default function Requests() {
           ))}
         </div>
       ) : requests.length === 0 ? (
-        <div className="bg-white rounded-xl p-10 text-center text-gray-400 shadow-sm border border-gray-100">
+        <div className="bg-[#1a2430] rounded-xl p-10 text-center text-[#a0a0a0] shadow-sm border border-gray-100">
           <div className="text-5xl mb-4">📭</div>
-          <p className="font-semibold text-gray-600">No Requests Found</p>
+          <p className="font-semibold text-[#a0a0a0]">No Requests Found</p>
           <p className="text-sm mt-1">New requests will appear here when they arrive</p>
         </div>
       ) : (
@@ -131,14 +131,14 @@ export default function Requests() {
             <button
               disabled={!pagination.hasPrev}
               onClick={() => setPage((p) => p - 1)}
-              className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-white border border-gray-200 text-sm disabled:opacity-40 hover:bg-gray-50 transition"
+              className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-[#190707] border border-gray-200 text-[#f8fafa]  text-sm disabled:opacity-40 hover:bg-[#57a574] transition"
             >
               <ChevronLeft size={15} /> Prev
             </button>
             <button
               disabled={!pagination.hasNext}
               onClick={() => setPage((p) => p + 1)}
-              className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-white border border-gray-200 text-sm disabled:opacity-40 hover:bg-gray-50 transition"
+              className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-[#190707] border border-gray-200 text-[#f8fafa]  text-sm disabled:opacity-40 hover:bg-[#57a574] transition"
             >
               Next <ChevronRight size={15} />
             </button>

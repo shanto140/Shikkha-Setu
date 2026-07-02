@@ -139,7 +139,7 @@ export default function NotificationPanel({ role }) {
       {/* BELL ICON */}
       <button
         onClick={() => setOpen(!open)}
-        className="relative text-gray-500 hover:text-gray-800 transition"
+        className="relative text-[#72d422] hover:text-[#eeeff5] transition"
       >
         <Bell size={20} />
         {unseenCount > 0 && (

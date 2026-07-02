@@ -76,7 +76,7 @@ export default function RequestModal({ volunteerId, classes, subjects, onClose }
             <select
               value={form.class_id}
               onChange={(e) => setForm({ ...form, class_id: e.target.value })}
-              className="w-full border border-gray-200 rounded-lg p-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-200 rounded-lg p-2.5 text-[#191616] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="">Select Class</option>
               {classes.map((c) => (
@@ -93,7 +93,7 @@ export default function RequestModal({ volunteerId, classes, subjects, onClose }
             <select
               value={form.subject_id}
               onChange={(e) => setForm({ ...form, subject_id: e.target.value })}
-              className="w-full border border-gray-200 rounded-lg p-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-200 rounded-lg p-2.5 text-[#191616] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="">Select Subject</option>
               {subjects.map((s) => (
@@ -135,7 +135,7 @@ export default function RequestModal({ volunteerId, classes, subjects, onClose }
               value={form.description}
               placeholder="Write any additional details..."
               onChange={(e) => setForm({ ...form, description: e.target.value })}
-              className="w-full border border-gray-200 rounded-lg p-2.5 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-200 rounded-lg p-2.5 text-[#191616] text-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 

@@ -49,35 +49,35 @@ export default function ProfileSidebar({ open, onClose }) {
   return (
     <>
       {open && (
-        <div className="fixed inset-0 bg-black/40 z-40" onClick={onClose} />
+        <div className="fixed inset-0 bg-black/60 z-40" onClick={onClose} />
       )}
 
       <div
-        className={`fixed top-0 right-0 w-72 h-full bg-white/95 backdrop-blurshadow-xl rounded-l-2xl border-l
-         border-gray-100 flex flex-col overflow-hidden
+        className={`fixed top-0 right-0 w-72 h-full bg-[#252937] backdrop-blurshadow-xl rounded-l-2xl border-l
+         border-[#1a2b48] flex flex-col overflow-hidden
           transform transition-transform duration-300 ease-in-out z-50
           ${open ? "translate-x-0" : "translate-x-full -translate-y-full"}`}
       >
-        <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100 flex-shrink-0">
-          <h2 className="font-semibold text-gray-800 text-sm">My Profile</h2>
+        <div className="flex items-center justify-between px-5 py-4 border-b border-[#254652] flex-shrink-0">
+          <h2 className="font-semibold text-[#1e0ca9] text-sm">My Profile</h2>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 transition"
+            className="text-[#d1d5d6] hover:text-[#5e6c83] transition"
           >
             <X size={18} />
           </button>
         </div>
-
+        
         {profile ? (
-          <div className="flex items-center gap-3 px-5 py-4 border-b border-gray-100 flex-shrink-0">
-            <div className="w-11 h-11 rounded-full bg-blue-100 text-blue-600 font-bold flex items-center justify-center text-sm flex-shrink-0">
+          <div className="flex items-center gap-3 px-5 py-4 border-b border-[#254652] flex-shrink-0">
+            <div className="w-11 h-11 rounded-full bg-[#433143] text-blue-600 font-bold flex items-center justify-center text-sm flex-shrink-0">
               {getInitials(profile.full_name)}
             </div>
             <div className="min-w-0">
-              <p className="font-semibold text-gray-800 text-sm truncate">
+              <p className="font-semibold text-[#f1f5ef] text-sm truncate">
                 {profile.full_name}
               </p>
-              <p className="text-xs text-gray-500 truncate">{profile.email}</p>
+              <p className="text-xs text-[#f1f5ef] truncate">{profile.email}</p>
               <p className="text-xs text-blue-500 mt-0.5 truncate">
                 {profile.institution_name}
               </p>
@@ -100,7 +100,7 @@ export default function ProfileSidebar({ open, onClose }) {
               onClick={() => setActiveModal(item.key)}
               className="w-full flex items-center justify-between px-5 py-3 hover:bg-gray-50 transition text-left group"
             >
-              <div className="flex items-center gap-3 text-sm text-gray-600 group-hover:text-gray-800">
+              <div className="flex items-center gap-3 text-sm text-[#f1f5ef] group-hover:text-gray-800">
                 <span className="text-gray-400 group-hover:text-blue-500 transition">
                   {item.icon}
                 </span>
@@ -114,7 +114,7 @@ export default function ProfileSidebar({ open, onClose }) {
           ))}
         </div>
 
-        <div className="px-5 py-4 border-t border-gray-100 flex-shrink-0">
+        <div className="px-5 py-4 border-t border-[#4d5c65] flex-shrink-0">
           <p className="text-xs text-gray-400 text-center">
             Shikkha Setu Platform
           </p>

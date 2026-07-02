@@ -53,7 +53,7 @@ export default function Sessions() {
       );
     }
   };
-  
+
   const handleCancel = async (id) => {
     const res = await fetch(`http://localhost:3000/api/sessions/${id}/cancel`, {
       method: "PUT",
@@ -74,27 +74,27 @@ export default function Sessions() {
           {[...Array(4)].map((_, i) => (
             <div
               key={i}
-              className="bg-white rounded-xl shadow-sm border border-gray-100 p-5 animate-pulse"
+              className="bg-[#1e293b] border border-[#334155] rounded-xl shadow-lg shadow-black/20 p-5 animate-pulse"
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-full bg-gray-200" />
+                <div className="w-10 h-10 rounded-full bg-[#334155]" />
                 <div className="space-y-2 flex-1">
-                  <div className="h-4 bg-gray-200 rounded w-3/4" />
-                  <div className="h-3 bg-gray-200 rounded w-1/2" />
+                  <div className="h-4 bg-[#334155] rounded w-3/4" />
+                  <div className="h-3 bg-[#334155] rounded w-1/2" />
                 </div>
               </div>
               <div className="space-y-2">
-                <div className="h-3 bg-gray-200 rounded" />
-                <div className="h-3 bg-gray-200 rounded w-5/6" />
+                <div className="h-3 bg-[#334155] rounded" />
+                <div className="h-3 bg-[#334155] rounded w-5/6" />
               </div>
             </div>
           ))}
         </div>
       ) : sessions.length === 0 ? (
-        <div className="bg-white rounded-xl p-10 text-center text-gray-400 shadow-sm border border-gray-100">
+        <div className="bg-[#1e293b] border border-[#334155] rounded-xl p-10 text-center shadow-lg shadow-black/20">
           <div className="text-5xl mb-4">📚</div>
-          <p className="font-semibold text-gray-600">No Sessions Yet</p>
-          <p className="text-sm mt-1 text-gray-500">
+          <p className="font-semibold text-gray-200">No Sessions Yet</p>
+          <p className="text-sm mt-1 text-gray-400">
             Sessions will appear here after they are created.
           </p>
         </div>
@@ -113,21 +113,21 @@ export default function Sessions() {
 
       {sessions.length > 0 && (
         <div className="flex items-center justify-between">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-400">
             Page {pagination.page} of {pagination.totalPages}
           </p>
           <div className="flex items-center gap-2">
             <button
               disabled={!pagination.hasPrev}
               onClick={() => setPage((p) => p - 1)}
-              className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-white border border-gray-200 text-sm disabled:opacity-40 hover:bg-gray-50 transition"
+              className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-[#1e293b] border border-[#334155] text-gray-200 text-sm disabled:opacity-40 hover:bg-[#334155] hover:border-blue-500/30 transition"
             >
               <ChevronLeft size={15} /> Prev
             </button>
             <button
               disabled={!pagination.hasNext}
               onClick={() => setPage((p) => p + 1)}
-              className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-white border border-gray-200 text-sm disabled:opacity-40 hover:bg-gray-50 transition"
+              className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-[#1e293b] border border-[#334155] text-gray-200 text-sm disabled:opacity-40 hover:bg-[#334155] hover:border-blue-500/30 transition"
             >
               Next <ChevronRight size={15} />
             </button>

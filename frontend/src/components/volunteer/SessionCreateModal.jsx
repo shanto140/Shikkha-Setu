@@ -17,7 +17,7 @@ export default function SessionCreateModal({ request, onClose , onSessionCreated
 
   const handleSubmit = async () => {
     if (!form.session_date || !form.start_time || !form.end_time) {
-      setError("Date, start time এবং end time দেওয়া আবশ্যক");
+      setError("Date, start time and end time must be provided");
       return;
     }
 
@@ -53,10 +53,10 @@ export default function SessionCreateModal({ request, onClose , onSessionCreated
         onClose();
         alert('session created');
       } else {
-        setError(data.message || "কিছু একটা সমস্যা হয়েছে");
+        setError(data.message || "An error occurred while creating the session");
       }
     } catch (err) {
-      setError("Server এ সমস্যা হয়েছে");
+      setError("An error occurred while creating the session");
     } finally {
       setLoading(false);
     }
@@ -81,7 +81,7 @@ export default function SessionCreateModal({ request, onClose , onSessionCreated
           </button>
         </div>
 
-        {/* FORM */}
+    
         <div className="space-y-4">
           <div>
             <label className="text-xs font-medium text-gray-600 mb-1 block">
@@ -92,7 +92,7 @@ export default function SessionCreateModal({ request, onClose , onSessionCreated
               name="session_date"
               value={form.session_date}
               onChange={handleChange}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#191616] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
@@ -106,7 +106,7 @@ export default function SessionCreateModal({ request, onClose , onSessionCreated
                 name="start_time"
                 value={form.start_time}
                 onChange={handleChange}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#191616] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
             <div>
@@ -118,7 +118,7 @@ export default function SessionCreateModal({ request, onClose , onSessionCreated
                 name="end_time"
                 value={form.end_time}
                 onChange={handleChange}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#191616] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
           </div>
@@ -134,7 +134,7 @@ export default function SessionCreateModal({ request, onClose , onSessionCreated
                 value={form.meeting_link}
                 onChange={handleChange}
                 placeholder="https://meet.google.com/..."
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-[#191616] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
           )}
@@ -144,7 +144,7 @@ export default function SessionCreateModal({ request, onClose , onSessionCreated
           )}
         </div>
 
-        {/* FOOTER */}
+    
         <div className="flex gap-3 mt-6">
           <button
             onClick={onClose}

@@ -94,14 +94,14 @@ export default function Accepted() {
             <button
               disabled={!pagination.hasPrev}
               onClick={() => setPage((p) => p - 1)}
-              className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-white border border-gray-200 text-sm disabled:opacity-40 hover:bg-gray-50 transition"
+              className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-[#190707] border border-gray-200 text-[#f8fafa]  text-sm disabled:opacity-40 hover:bg-[#57a574] transition"
             >
               <ChevronLeft size={15} /> Prev
             </button>
             <button
               disabled={!pagination.hasNext}
               onClick={() => setPage((p) => p + 1)}
-              className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-white border border-gray-200 text-sm disabled:opacity-40 hover:bg-gray-50 transition"
+              className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-[#190707] border border-gray-200 text-[#f8fafa]  text-sm disabled:opacity-40 hover:bg-[#57a574] transition"
             >
               Next <ChevronRight size={15} />
             </button>
